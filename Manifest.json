@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "MyCore",
+    "version": "1.0",
+  
+    "description": "Adds a red border to all webpages matching mozilla.org.",
+  
+    "icons": {
+     
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.duolingo.com/*"],
+        "js": ["MyCore.js"]
+      }
+    ]
+  
+  }
